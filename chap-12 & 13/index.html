@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align:center ;">CHAP 12-13</h1>
+<h1>Check Your input Number is Positive, Negative or zero </h1>
+<input type="number" name="" id="met">
+<button onclick="meto()">Check</button>
+<script>
+    function meto(){
+let met = document.querySelector('#met').value;
+if(met<0){
+    alert('you have enter a negative number')
+}
+else if(met==0){
+    alert('you have enter zero')
+}
+else{
+    alert('you have entered Positive number')
+}
+
+
+    }
+</script>
+<h1>Check your input is Number or letter</h1>
+<input type="text" id="lett">
+<button onclick="lette()">Check</button>
+<script>
+    function lette(){
+let arr1 = ['a','b','c','d']
+let lett = document.querySelector('#lett').value;
+let lett1 = Number(lett)
+if(lett==lett1){
+    alert('your input is Number')
+}
+else{
+    alert('Your input is letter')
+}
+
+
+
+
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+    }
+</script>
+<h1>Check whether your input is vowel or Not.</h1>
+<input type="text" name="" id="vow">
+<button onclick="vowe()">Check</button>
+<script>
+    function vowe(){
+let vow =document.querySelector('#vow').value;
+if (vow=="a"){
+    alert('A is vowel letter')
+}
+else if (vow=="e"){
+    alert('E is vowel letter')
+}
+else if (vow=="i"){
+    alert('I is vowel letter')
+}
+else if (vow=="o"){
+    alert('O is vowel letter')
+}
+else if (vow=="u"){
+    alert('U is vowel letter')
+}
+else if (vow=="A"){
+    alert('A is vowel letter')
+}
+else if (vow=="E"){
+    alert('E is vowel letter')
+}
+else if (vow=="I"){
+    alert('I is vowel letter')
+}
+else if (vow=="O"){
+    alert('O is vowel letter')
+}
+else if (vow=="U"){
+    alert('U is vowel letter')
+}
+else{
+    alert('Sorry! Your input is not vowel')
+}
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Password Input</h1>
+ <form >
+<label for="">
+<strong>Password</strong>
+    <input type="password" id="use2" style="margin-left:60px ;">
+</label><br>
+<label  for="">
+    <strong>Confirm Password</strong>
+<input style="margin-top: 20px;" type="password" name="" id="use3">
+</label>
+<button onclick="use4()" type="submit">submit</button>
+</form>
+<script>function use4(){
+
+    let use2= document.querySelector('#use2').value;
+    let use3=document.querySelector('#use3').value;
+    if(use2==""){
+        alert('field cannot be empty.!')
+    }
+    else if(use2 != use3){
+        alert('Password didnot match.')
+        return false
+    }
+    else if(use2 == use3){
+        alert('password match')
+    }
+    return true
+}
+
+</script>
+<!-- <input type="number" name="" id="hour"> -->
+<!-- <button onclick="hour1()">Submit</button> -->
+<!-- <p id="hour2"></p> -->
+<script>
+// function hour1(){
+    // let hour1 = document.querySelector('#hour').value;
+  //  console.log(hour1);   
+    let hour=13;
+    let greeting='';
+    if (hour<18){
+        greeting='Good Day'}
+    else{
+    greeting="Good Evening"
+    }
+    // else if(hour1<24){
+        // greeting="Error"
+    // }
+console.log(greeting)
+//   let hour3=document.querySelector('#hour2').innerText = greeting;  
+    // console.log('hour', hour);
+    
+    
+// }
+</script>
+<div style="margin-top: 30px;"><h1>Input Time In 24 Hour Format</h1>
+<input type="number" id="format">
+<button onclick="forma()" type="submit">Submit</button>
+<p id="format1"></p>
+</div>
+<script>
+function forma(){
+let format =document.querySelector('#format').value;
+ console.log(format);   
+ let format2 = '';   
+ if(format>=0000 && format<12 ){
+     format2='Good Morning'
+ }   
+ else if(format>=12 && format<17){
+     format2='Good Afternoon'
+ }
+ else if(format>=17 && format<21){
+     format2='Good Evening'
+ }
+ else if(format>=21 && format<=23.59){
+     format2='Good Night'
+ }
+ else{
+     format2="Invalid Input"
+ }
+
+document.querySelector('#format1').innerText=format2
+}
+</script>
+<h1>Enter two integers to make them larger and Show them equal if they are:</h1>
+<input type="number" id="inte">
+<input type="number" name="" id="inte1"><br>
+<button onclick="integ()">Check</button>
+<script>
+    function integ(){
+
+        let inte= document.querySelector('#inte').value;
+        let inte1= document.querySelector('#inte1').value;
+        inte=Number(inte)
+        inte1=Number(inte1)
+        let inte2 = inte + inte1;
+        if(inte==inte1){
+            alert('You Have enter equal integers')
+        }
+    else if(inte<0){
+        alert('Invalid Input')
+    }
+    else if(inte1<0){
+        alert('Invalid input')
+    }
+    else{
+        alert ('LARGER INTEGER IS '+ inte2)
+    }
+    }
+</script>
+
+
+
+
+
+<div ><h2 style="text-align:center ; margin-top: 50px;     ">Chap 9-11</h2></div>
+<div>
+    <h1>About City</h1>
+<input type="text" name="" id="city">
+<button onclick="cite()">submit</button> 
+</div>
+<script>
+function cite(){
+let city = document.querySelector('#city').value;
+if (city=="Karachi"){
+    alert('City Of Light')
+}
+else if (city=="karachi"){
+    alert('City Of Light')
+}    
+else if (city=="KARACHI"){
+    alert('City Of Light')
+}    
+
+ else if(city==""){
+     alert('Please input Karachi')
+    }   
+    else{
+     alert('Input Must be Karachi')
+ }
+    
+}
+</script>
+<div style="margin-top:50px ;">
+<h2>Please Input you Gender</h2>
+<input type="text" name="" id="gander">
+<button onclick="gen()">Submit</button>
+
+</div>
+<script>
+function gen(){
+let gender = document.querySelector('#gander').value;
+ if(gender=="male"){
+     alert('Hello Sir!')
+ }   
+ else if(gender=="Male" ){
+    alert('Hello Sir!')
+ }   
+ else if (gender=="MALE"){
+    alert('Hello Sir!')
+ }   
+ else if(gender=="female"){
+    alert('Hello Madam!')}   
+    else if(gender=="Female"){
+    alert('Hello Madam!')}   
+    else if(gender=="FEMALE"){
+    alert('Hello Madam!')}   
+ else if(gender==""){
+     alert('Please enter your Gender')
+ }
+ else{
+     alert('invalid Input')
+ }
+}
+</script>
+<div style="margin-top: 50px;"><h2>Please Input Road Tarrafic Signal Colors TO Know The Message Behind.</h2>
+<input type="text" name="" id="color">
+<button onclick="boot()">Check</button>
+</div>
+<script>
+function boot(){
+let color = document.querySelector('#color').value;
+if(color=="red"){
+    alert('STOP NOW!!')
+}
+else if(color=="Red"){
+    alert('STOP NOW!!')
+}
+else if(color=="RED"){
+    alert('STOP NOW!!')
+}
+else if(color=="yellow"){
+    alert('READY TO MOVE . . .')
+}
+else if(color=="Yellow"){
+    alert('READY TO MOVE . . .')
+}
+else if(color=="YELLOW"){
+    alert('READY TO MOVE . . .')
+}
+else if(color=="green"){
+    alert('NOW MOVE . . .')
+}
+else if(color=="Green"){
+    alert('NOW MOVE . . .')
+}
+else if(color=="GREEN"){
+    alert('NOW MOVE . . .')
+}
+else if(color==""){
+    alert('PLEASE INPUT ROAD TARRAFIC COLOR')
+}
+else{
+    alert('INVALID INPUT')
+}
+
+
+}
+
+
+</script>
+
+<div style="margin-top: 50px;">
+<h2>Car's Fuel Checker</h2>
+<p><input type="number" name="" id="fuel">*note that output will be in litre*</p>
+<button onclick="fuelo()">Check</button>
+</div>
+<script>
+function fuelo(){
+let fuel = document.querySelector('#fuel').value;
+ if(fuel<=0.25 && fuel>0){
+alert('Please refill the fuel in your car')
+ }   
+ else if(fuel>0.25){
+     alert('Fuel Condition is better')
+    }   
+    else if(fuel==""){
+   alert('Kindly Input Some Number')
+    }  
+ else if (fuel==0){
+     alert('Your Fuel Tank Is Empty')
+ }
+ else{
+     alert('invalid input')
+ }   
+}
+</script>
+<p style="margin: top 100px; margin-left: 50px;"><a href="hh.html" style="text-decoration: none;">Question-5</a></p>
+<div style="margin: top 50px; ;">
+<h1>Get your Marksheet Here</h1>
+<form onsubmit="mor(); return false">
+Total Marks:
+<input type="number" min="1" id="mr">
+<br>
+Obtained Marks:
+<input type="number" name="" id="mr1">
+<button type="submit">Submit</button>
+<h1 id="result"></h1>
+<p id="mr2"></p>
+</form>
+<script>
+function mor(){
+    let mr = document.querySelector('#mr').value;
+    console.log('mr',mr)
+    let mr1 = document.querySelector('#mr1').value;
+    console.log('mr1',mr1)
+    mr=Number(mr)
+    mr1=Number(mr1)
+    let text = "";
+    let result = "";
+        if(isNaN(mr)){
+    text="Please enter a valid Total Marks"; 
+        }
+        if (isNaN(mr1)) {
+                text = "Please enter a valid Obtained Marks";
+            }     
+            if (mr < 1) {
+                text = "Please enter a positive value for Total Marks";
+            }
+            if(mr1 < 0) {
+                text = "Please enter a positive value for Obtained Marks";
+            }
+
+            if (mr < mr1) {
+                text = "Obtained Marks cannot be greater than Total Marks";
+            }
+if (text){
+    document.querySelector('#mr2').innerText=text;
+return;
+}
+else{
+document.querySelector('#mr2').innerText=""
+}
+let percent =  (mr1 / mr) * 100;
+console.log('percent',percent)
+if(percent<60){
+    result='Fail'
+}
+if (percent>=60){
+    result='Grade-B'
+}
+if(percent>=70){
+    result='Grade-A'
+}
+if(percent>=80){
+    result='Grade-A1'
+}
+document.querySelector('#result').innerText=`${percent}% - ${result}`
+
+
+}
+</script>
+<div style="margin-top: 50px;">
+<h2>Check your number is divided by 3 or not.</h2>
+<input type="number" name="" id="div">
+<button onclick="dov()">Submit</button>
+</div>
+<script>
+    function dov(){
+
+        let div = document.querySelector('#div').value;
+        if(div<=0){
+alert('Invalid input')
+        }
+        else if(div % 3 == 0){
+            alert('Your Number is Divisilbe by 3')
+        }
+    
+    else{
+        alert('This Number is Not Divisible by 3')
+    }
+    
+    
+    }
+</script>
+<div style="margin-top: 50px;">
+<h2>Check Whether your given number is even or odd</h2>
+<input type="number" id="eve">
+<button onclick="even()">Check</button>
+</div>
+<script>
+function even(){
+let eve = document.querySelector('#eve').value;
+if(eve<0){
+    alert('invalid Input')
+}
+else if(eve%2==0){
+    alert('your Input is an even Number')
+}
+else{
+    alert('Your Input is an Odd Number')
+}
+}
+</script>
+<div style="margin-top: 50px;">
+<h2>Enter Your City Tempurature to Check Weather Condition.</h2>
+<input type="number" name="" id="weat">
+<button onclick="weat1()">Check</button>
+</div>
+<script>
+function weat1(){
+let weat = document.querySelector('#weat').value;
+if (weat>40) {
+    alert('OMG! it is too hot outside')} 
+else if(weat>30){
+    alert('Weather is normal today')
+}    
+else if(weat>20){
+    alert('Weather is cool today')
+}    
+else if (weat>10){
+    alert('WOW! weather is so cool today')
+}    
+ else{
+     alert('now Weather is to be very cold')
+ }   
+}
+</script>
+
+<div style="margin-top: 50px;">
+<h1>Calculator</h1>
+<input type="number" name="" id="num">
+<input type="number" name="" id="num1"><br>
+<button onclick="add()">Add</button>
+<button onclick="sub()">Sub</button>
+<button onclick="multi()">Multiply</button>
+<button onclick="divide()">Divide</button>
+<button onclick="modulus()">Modulus</button>
+<p id="num2"></p>
+<p id="num3"></p>
+</div>
+<script>
+function add(){
+let num = document.querySelector('#num').value;
+let num1= document.querySelector('#num1').value;
+let num4= Number(num)+Number(num1);
+let num3= "";
+let num5="";
+if(num<0){
+num3="invalid input"
+}
+else if(num1<0){
+num3="invalid input"
+}
+else if(num4<0){
+num5="";
+}
+else if(num4>0){
+    num5=num4;
+}
+document.querySelector('#num2').innerText=num3;
+document.querySelector('#num3').innerText=num5
+
+
+}
+
+</script>
+<script>
+    function sub(){
+    let num = document.querySelector('#num').value;
+    let num1= document.querySelector('#num1').value;
+    let num4= Number(num)-Number(num1);
+    let num3= "";
+    let num5="";
+    if(num<0){
+    num3="invalid input"
+    }
+    // else if(num1<0){
+    // num3="invalid input"
+    // }
+    else if(num4<0){
+    num5="";
+    }
+    // else if(num4>0){
+       { num5=num4;
+    }
+    document.querySelector('#num2').innerText=num3;
+    document.querySelector('#num3').innerText=num5
+    
+    
+    }
+    
+    </script>
+    <script>
+        function multi(){
+        let num = document.querySelector('#num').value;
+        let num1= document.querySelector('#num1').value;
+        let num4= Number(num)*Number(num1);
+        let num3= "";
+        let num5="";
+        if(num<0){
+        num3="invalid input"
+        }
+        else if(num1<0){
+        num3="invalid input"
+        }
+        else if(num4<0){
+        num5="";
+        }
+        else if(num4>0){
+            num5=num4;
+        }
+        document.querySelector('#num2').innerText=num3;
+        document.querySelector('#num3').innerText=num5
+        
+        
+        }
+        
+        </script>
+        
+        <script>
+            function divide(){
+            let num = document.querySelector('#num').value;
+            let num1= document.querySelector('#num1').value;
+            let num4= Number(num)/Number(num1);
+            let num3= "";
+            let num5="";
+            if(num<0){
+            num3="invalid input"
+            }
+            else if(num1<0){
+            num3="invalid input"
+            }
+            else if(num4<0){
+            num5="";
+            }
+            else if(num4>0){
+                num5=num4;
+            }
+            document.querySelector('#num2').innerText=num3;
+            document.querySelector('#num3').innerText=num5
+            
+            
+            }
+            
+            </script>
+            
+            <script>
+                function modulus(){
+                let num = document.querySelector('#num').value;
+                let num1= document.querySelector('#num1').value;
+                let num4= Number(num)%Number(num1);
+                let num3= "";
+                let num5="";
+                if(num<0){
+                num3="invalid input"
+                }
+                else if(num1<0){
+                num3="invalid input"
+                }
+                else if(num4<0){
+                num5="";
+                }
+                else if(num4>=0){
+                    num5=num4;
+                }
+                document.querySelector('#num2').innerText=num3;
+                document.querySelector('#num3').innerText=num5
+                
+                
+                }
+                
+                </script>
+
+                <h1 style="text-align: center;">CHAP 14-16</h1>
+                <script>
+
+                    let abc=[, , , , , ];
+              console.log('abc',abc)
+let stringArr= ['alpha','beta','gama'];
+console.log('stringArr', stringArr)
+              
+let numArr=[1,2,3,4,5,6];              
+console.log('numArr', numArr);              
+              
+ let boolArr= [7];
+ console.log('boolArr',boolArr) ;             
+ let num=boolArr;             
+console.log(num==7)
+let mixArr=[stringArr, num, numArr, '1', '2', '3', true, false]
+console.log('mixArr',mixArr);
+document.write('Education Using Array \n')
+
+let eduArr=['1)SSC' , '2)HSC', '3)BSC', '4)BS', '5)BCOM', '6)MS', '7)M.PHILL', '8)PhD']
+document.write(eduArr)
+console.log('eduArr', eduArr)
+
+
+let stuName=['Michael','John', 'Tony']
+console.log('stuName', stuName);             
+let stuScore=['Score of Micael is 320. Percentage: 64% \n',
+              'Score of John is 230. Percentage: 46%\n',
+               'Score of tony is 480. Percentage: 96%' ]             
+ console.log('StuScore', stuScore);            
+   document.write(stuScore)          
+            
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+</script>
+                
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
